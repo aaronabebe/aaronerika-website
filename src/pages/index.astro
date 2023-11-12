@@ -1,0 +1,220 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout>
+    <main>
+        <h1>AaR0N+eRiKa<3</h1>
+
+        <div class="social-links">
+            <a>instagram</a>
+            <a>spotify</a>
+            <a>youtube</a>
+            <a>bandcamp</a>
+        </div>
+
+        <p>we are a band from vienna, austria. </p>
+        <p> currently recording our first album</p>
+        <p>XOXO</p>
+
+        <h2>news</h2>
+        <div class="news-container">
+            <div class="news-item">
+                <p>24.11.2023</p>
+                <h3><b>new single: </b> Bad Feminist</h3>
+                <div>
+                    <a href="https://"> presave </a>
+                    <a href="https://"> listen</a>
+                </div>
+            </div>
+
+            <div class="news-item">
+                <p>22.11.2023</p>
+                <h3><b>concert: </b>tunnel vienna</h3>
+                <div>
+                    <a href="https://">click here to earn free coins</a>
+                </div>
+            </div>
+
+            <div class="news-item">
+                <p>22.11.2023</p>
+                <h3><b>concert: </b>ministry of artists vienna</h3>
+                <div>
+                    <a href="https://aaronabebe.github.io">spicy pics</a>
+                </div>
+            </div>
+
+            <div class="news-item">
+                <p>26.05.2023</p>
+                <h3><b>concert: </b>semmelweis klinik vienna</h3>
+                <div>
+                    <a href="https://instagram.com/">download now</a>
+                </div>
+            </div>
+
+            <div class="news-item">
+                <p>14.1.2023</p>
+                <h3><b>concert: </b>toytopia vienna</h3>
+                <div>
+                    <a href="https://">instagram</a>
+                </div>
+            </div>
+
+            <div class="news-item">
+                <p>20.12.2022</p>
+                <h3><b>concert: </b>p.m.k. innsbruck</h3>
+                <div>
+                    <a href="https://"> event</a>
+                </div>
+            </div>
+        </div>
+    </main>
+</Layout>
+
+<style>
+    main {
+        margin: auto;
+        padding: 10px;
+        width: 90%;
+        height: 100vh;
+        max-width: calc(100% - 2rem);
+        font-size: 17px;
+        line-height: 1.6;
+        scrollbar-color: #00f #f00;
+        overflow-y: scroll;
+    }
+
+    .social-links {
+        background: linear-gradient(0deg, #f00, #ff0, #00f);
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction:column;
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 2rem;
+        font-weight: 300;
+        background: blue;
+        color: red;
+        padding: 10px;
+        margin: 0;
+    }
+
+    h2 {
+        font-size: 2rem;
+        font-weight: 600;
+        text-decoration: underline;
+        width: fit-content;
+        background: red;
+    }
+
+    .news-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .news-item {
+        padding-top: 1rem;
+        border-bottom: 2px dashed;
+        width: 100%;
+        padding-bottom: 10px;
+        text-align: center;
+        background: red;
+
+    }
+
+    p {
+        margin: 0;
+        padding: 10px;
+        background: red;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+        font-style: italic;
+        font-weight: 500;
+    }
+
+    a {
+        font-size: 1rem;
+        font-weight: 500;
+        border: 2px solid;
+        padding: 10px;
+        color: #00f;
+        background: #ff0;
+        margin-right: 15px;
+        display: inline-block;
+    }
+
+    a:hover {
+        color: #ff0;
+        background: #f00;
+        cursor: pointer;
+        transform: scale(1.2);
+    }
+
+    summary {
+        font-size: 2rem;
+        font-weight: 100;
+    }
+
+
+    /* scrollbar */
+    ::-webkit-scrollbar {
+        width: 10px;
+    }
+
+    ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: #888;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+        background: #555;
+    }
+
+    @media screen and (min-width: 600px) {
+        main {
+            width: 50%;
+            padding: 1rem;
+        }
+
+        .social-links {
+            flex-direction: row;
+        }
+
+        h1 {
+            font-size: 4rem;
+        }
+
+        h2 {
+            font-size: 3rem;
+        }
+
+        h3 {
+            font-size: 2rem;
+        }
+
+        .news-item {
+            width: 50%;
+        }
+
+        .news-container {
+            width: 100%;
+        }
+
+        a {
+            font-size: 1rem;
+        }
+
+        summary {
+            font-size: 1rem;
+        }
+    }
+
+</style>
