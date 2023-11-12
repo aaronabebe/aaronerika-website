@@ -13,13 +13,15 @@ import Layout from '../layouts/Layout.astro';
             <a>bandcamp</a>
         </div>
 
-        <p>we are a band from vienna, austria. </p>
-        <p> currently recording our first album</p>
-        <p>XOXO</p>
+        <div class="bio">
+            <p>we are a band from vienna, austria. </p>
+            <p> currently recording our first album</p>
+            <p>XOXO</p>
+        </div>
 
         <h2>news</h2>
         <div class="news-container">
-            <div class="news-item">
+            <div class="news-item single">
                 <p>24.11.2023</p>
                 <h3><b>new single: </b> Bad Feminist</h3>
                 <div>
@@ -109,6 +111,10 @@ import Layout from '../layouts/Layout.astro';
         background: red;
     }
 
+    .bio {
+        background: #ff0000;
+    }
+
     .news-container {
         display: flex;
         flex-direction: column;
@@ -122,13 +128,15 @@ import Layout from '../layouts/Layout.astro';
         padding-bottom: 10px;
         text-align: center;
         background: red;
+    }
 
+    .single {
+        background: #ff0;
     }
 
     p {
         margin: 0;
         padding: 10px;
-        background: red;
     }
 
     h3 {
